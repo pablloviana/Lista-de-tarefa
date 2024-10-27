@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="inputContainer">
+            <div class="textsContainer">
+                <div class="title">
+                    <h1 class="titleToDo">to-do </h1>
+                    <h1 class="titleList"> list</h1>
+                </div>
+                <p>adicione suas tarefas do dia para se organizar</p>
+            </div>
+            <div class="forms">
+                <form class="formStyle taskContainer">
+                    <label for="taskInput">tarefa</label>
+                    <div class="taskForm">
+                        <input type="text" id="taskInput" placeholder="Adicione uma nova tarefa">
+                        <button type="submit" id="taskButton"></button>
+                    </div>
+                </form>
+                <form class="formStyle searchContainer">
+                    <label for="searchInput">pesquisar</label>
+                    <div class="searchForm">
+                        <input type="text" id="searchInput" placeholder="Buscar">
+                        <button type="submit" id="searchButton"></button>
+                    </div>
+                </form>
+                <form class="formStyle filterContainer">
+                    <label for="filterSelect">filtro</label>
+                    <select id="filterSelect">
+                        <option value="all">todos</option>
+                        <option value="toDo">a fazer</option>
+                        <option value="check">concluídas</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+        <section class="tasksContainer">
+        </section>   
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
